@@ -1,0 +1,38 @@
+<form (ngSubmit)="saveFlower()" ngNativeValidate>
+  <div class="form-group">
+    <label class="h3" for="nom">Nom</label>
+    <input
+    type="text"
+    class="form-control"
+    id="nom"
+    required
+    name="nom"
+    [(ngModel)]="flower.nom"
+    />
+  </div>
+
+  <div class="form-group">
+    <label class="h3"for="description">Couleur</label>
+    <input
+    class="form-control"
+    id="couleur"
+    required
+    name="couleur"
+    [(ngModel)]="flower.couleur"
+    />
+  </div>
+
+  <div class="form-group">
+    <label class="h3"for="prix">Prix</label>
+    <input
+    type="text"
+    class="form-control"
+    id="prix"
+    required
+    name="prix"
+    [(ngModel)]="flower.prix"
+    />
+
+
+  <button type="submit" class="btn btn-success">Envoyer</button>
+

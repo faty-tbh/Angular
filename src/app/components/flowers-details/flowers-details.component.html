@@ -1,0 +1,42 @@
+<form (ngSubmit)="updateFlower()"  ngNativeValidate>
+  <form>
+  <div class="form-group">
+    <label class="h3" for="nom">Nom</label>
+    <input
+    type="text"
+    class="form-control"
+    id="nom"
+    required
+    name="nom"
+    [(ngModel)]="currentFlower.nom"
+    />
+  </div>
+
+  <div class="form-group">
+    <label class="h3"for="description">Couleur</label>
+    <input
+    class="form-control"
+    id="couleur"
+    required
+    name="couleur"
+    [(ngModel)]="currentFlower.couleur"
+    />
+  </div>
+
+  <div class="form-group">
+    <label class="h3"for="prix">Prix</label>
+    <input
+    type="text"
+    class="form-control"
+    id="prix"
+    required
+    name="prix"
+    [(ngModel)]="currentFlower.prix"
+    />
+      <button type="Submit" class="badge bg-warning mr-2" (click)="updateFlower()">Mise à jour</button>
+
+      <button type="button" class="badge badge-danger bg-danger mr-2" (click)="deleteFriandise()">Supprimer</button>
+      <button type="button" class="badge bg-success mr-2" (click)="cancelFriandise()">Annuler</button>
+
+    </div>
+</form>

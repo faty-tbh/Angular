@@ -1,0 +1,28 @@
+<div class="container">
+
+  <h1>List of Flowers</h1>
+
+  <div class="row mt-5">
+
+  <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let flower of flowers;">
+
+  <div class="card mb-5" style="width: 18rem;">
+
+  <h5 class="card-title">Nom: {{flower.nom}}</h5>
+
+  <p class="card-text">Couleur: {{flower.couleur}}</p>
+
+  <p class="card-text"> Prix: {{flower.prix}} $</p>
+
+  <p class="card-text d-none"> id: {{flower._id}}</p>
+
+  <a class="badge bg-warning" routerLink="/flowers/{{flower._id}}">Éditer</a>
+
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
